@@ -1,0 +1,360 @@
+/* Google Font links */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans:opsz,wght@9..40,100;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300&family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+ul,
+ol,
+dl{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    color: var(--body-text);
+}
+:root{
+    --primary-color: #E3847F;
+    --htext-color:#521717;
+    --p-color:#A3A0A1;
+    --lime-color:#5EA021;
+    --ucommon-color:#815B5D;
+    --bg-color:#F3F0F1;
+    --body-text: #262626;
+    --heading-font: 'Roboto', sans-serif;
+    --p-font:'Poppins', sans-serif;
+}
+
+.section-padding{
+    padding: 100px 0;
+}
+
+/* Header section design */
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.top-border{
+    background: var(--lime-color);
+    width: 100%;
+    color: #fff;
+    padding: 6px;
+    z-index: 100000;
+}
+
+.top-border marquee{
+    font-size: 1rem;
+}
+.navbar{
+    background: var(--bg-color);
+    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.display-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+ul{
+    margin:0 auto;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar ul li .nav-link{
+    color: var(--ucommon-color);
+    padding: 8px 20px;
+    font-weight: 500;
+    display: inline-block;
+    font-family: var(--p-font);
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.navbar ul li .nav-link:hover,
+.active{
+    background: var(--primary-color);
+    color: #fff !important;
+}
+
+
+.brand a{
+    font-size: 2rem;
+    color: var(--lime-color);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navbar button{
+    border: 0;
+    outline: none;
+}
+
+.fa-bars{
+    color: var(--p-color);
+    font-size: 2rem;
+    cursor: pointer;
+    border: 0;
+    padding: 10px;
+    display: none !important;
+}
+
+
+.hero-area{
+    height: 100vh;
+    max-height: 700px;
+    background:  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/header.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1000;
+}
+
+
+.hero-area{
+    display: flex;
+    align-items: center;
+}
+
+.hero-text{
+    color: #fff;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+
+.hero-text h4{
+    font-size: 1.4rem;
+    font-family: var(--p-font);
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-text h1{
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero-text p{
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+.btn{
+    padding: 10px 25px;
+    font-size: 1.125rem;
+    display: inline-block;
+    border-radius: 4px;
+}
+.primary-btn{
+    background: var(--htext-color);
+    color: var(--bg-color);
+    border: 3px solid var(--htext-color);
+    cursor: pointer;
+    
+}
+.primary-btn:hover{
+    background: var(--lime-color);
+    color: var(--bg-color);
+    border: 3px solid var(--htext-color);
+}
+
+.hero-buttons{
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.hero-buttons button{
+    background: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    border: 4px solid var(--htext-color);
+    transition: all 0.3s ease;
+}
+
+.hero-buttons button:hover{
+    border: 4px solid  var(--primary-color);
+    background: var(--htext-color);
+}
+
+
+
+/* Chef cooker info design */
+
+
+/* Our Food Section design */
+
+.section-header{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.section-header h2{
+    color: var(--htext-color);
+    font-size: 2rem;
+}
+.section-header p{
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.all-catagories{
+    font-size: 2rem;
+}
+
+.foods-headline{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.filter-btn{
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 2px solid;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.filter-btn:hover{
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: #262626;
+}
+.foods-container .row{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.foods-container .col-4{
+    width: calc(25% - 20px);
+    margin: 0 10px;
+    cursor: pointer;
+
+}
+
+.singel-food{
+    background: #fff;
+    border-radius: 8px;
+    padding-bottom: 40px;
+}
+.singel-food-img{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius:8px 8px 0 0;
+}
+.foods-container .col-4:hover img{
+    transform: scale(1.2);
+    transition: all 0.5s ;
+}
+
+.singel-food img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.favurite{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--lime-color);
+    color: #fff;
+    text-align: center;
+    padding-top: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.running-offer{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: var(--lime-color);
+    padding: 8px 20px;
+    color: #fff;
+    border-radius: 0 20px 20px 0;
+    width: auto;
+    text-align: center;
+    z-index: 1;
+}
+
+
+.food-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.name{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.food-reviwe{
+    font-size: .75rem;
+}
+ .price p{
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+.food-reviwe .oder-counting{
+    color: #A3A0A1;
+}
+
+.food-reviwe i{
+    color: goldenrod;
+}
+
+
+
+
